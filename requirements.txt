@@ -1,0 +1,20 @@
+The package requirements for this Python program are as follows:
+
+- requests
+- bs4 (BeautifulSoup)
+- nltk
+- matplotlib
+- plotly
+- nltk.corpus (specifically vader_lexicon)
+
+You can install these packages using pip by running the following command:
+
+```
+pip install requests bs4 nltk matplotlib plotly
+```
+
+Additionally, you will need to download the 'vader_lexicon' from the nltk.corpus module. You can do this by uncommenting the line `nltk.download('vader_lexicon')` in your code or running the following command in your Python interpreter:
+
+```python
+nltk.download('vader_lexicon')
+```
