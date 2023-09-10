@@ -7,6 +7,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 
 nltk.download('vader_lexicon')
 
+
 class CareerNavigator:
     def __init__(self, industry_trends_url, job_markets_url, forums_url, social_media_url):
         self.industry_trends_url = industry_trends_url
@@ -36,32 +37,32 @@ class CareerNavigator:
 
     def analyze_career_data(self, career_data):
         analyzed_data = {}
-        
+
         # Perform NLP analysis using NLTK and spaCy
         # Implement the NLP analysis here
-        
+
         return analyzed_data
 
     def get_career_recommendations(self, analyzed_data):
         recommendations = []
-        
+
         # Generate personalized career path recommendations based on analyzed data
         # Implement the algorithm for generating recommendations here
-        
+
         return recommendations
 
     def sentiment_analysis(self, text_data):
         sia = SentimentIntensityAnalyzer()
         sentiment_scores = sia.polarity_scores(text_data)
-        
+
         return sentiment_scores
 
     def identify_income_generation(self, analyzed_data):
         income_channels = []
-        
+
         # Identify non-conventional income generation channels
         # Implement the logic for identifying income channels here
-        
+
         return income_channels
 
     def visualize_data(self, analyzed_data):
@@ -78,10 +79,10 @@ class CareerNavigator:
 
     def generate_reports(self, analyzed_data):
         report = ""
-        
+
         # Generate detailed reports summarizing key insights and recommendations
         # Implement the logic for generating reports here
-        
+
         return report
 
     def send_notifications(self, notifications):
@@ -97,7 +98,8 @@ job_markets_url = 'https://realworlddataset.com/job_markets'
 forums_url = 'https://realworlddataset.com/forums'
 social_media_url = 'https://realworlddataset.com/social_media'
 
-career_navigator = CareerNavigator(industry_trends_url, job_markets_url, forums_url, social_media_url)
+career_navigator = CareerNavigator(
+    industry_trends_url, job_markets_url, forums_url, social_media_url)
 
 career_data = career_navigator.extract_career_data()
 analyzed_data = career_navigator.analyze_career_data(career_data)
